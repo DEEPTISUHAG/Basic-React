@@ -1,19 +1,78 @@
 .card {
 
-    width: 300px;
+    width: 400px; 
 }
+.close-icon{
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+}
+.head{
+    margin: 10px 0px 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    
+   
+}
+h2{
+    text-align: center;
+   
+}
+
+p{
+    font-weight: 600;
+    color: #c9c9cb;
+}
+
 
 .Login-body {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: left;
-    height: 90vh;
+    height: 550px;
+    background-image: url(./businessman-3210932_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+   
 }
 .card{
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    opacity: 0.8;
+}
+.card-body{
+    input,textarea{ 
+        color: #fafafc;
+        font-weight: 600;
+    }
+    
 }
 .button-group{
     display: flex;
-    justify-content: space-between;
+    text-align: start;
+    margin-left: 15px;
+    
+    .danger{
+        background-color: rgb(247, 107, 82);
+        border-radius: 4px;
+        width: 100px;
+        font-weight: 500;
+        
+        color: #fff;
+    }
+    .primary{
+        background-color: rgb(75, 78, 250);
+        border-radius: 4px; 
+        color: #fff;
+        font-weight: 500;
+
+    }
+}
+.last-line{
+    text-align: center;
+    margin: 20px;
+    font-size: 12px;
+    span{
+     color: rgb(11, 103, 242);
+    }
 }

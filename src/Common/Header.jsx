@@ -1,5 +1,11 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
+
 export default function Header() {
+    const navigate = useNavigate();
+    const goLogin=()=>{
+        navigate('/login')
+    }
     return (
         <>
             <nav class="navbar navbar-expand-lg bg-primary">
@@ -30,8 +36,8 @@ export default function Header() {
                             </li>
                         </ul>
                         <form class="d-flex" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                            <button class="btn btn-danger" type="submit">Search</button>
+                            <button class="btn btn-danger"  onClick={goLogin} type="submit">Login
+                            </button>
                         </form>
                     </div>
                 </div>
