@@ -1,0 +1,19 @@
+.card {
+
+    width: 300px;
+}
+
+.Login-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    height: 90vh;
+}
+.card{
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+}
+.button-group{
+    display: flex;
+    justify-content: space-between;
+}
