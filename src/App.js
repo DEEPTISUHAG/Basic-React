@@ -3,26 +3,25 @@ import './Style.css';
 import Login from './Login/Login';
 import Header from './Common/Header';
 import Signup from './Signup/Signup';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
+import Location from './Health/Location';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; 
 function App() {
   return (
-    <div className="App">
-      <Header/> 
-      {/* <Router>
-      <Switch>
-        <Route path="/signup" exact component={Signup} />
-        <Route path="/login" component={Login} />
-      </Switch>
-    </Router> */}
-
+    // <div className="App">
+    <>
     <Router>
+    <Header/> 
       <Routes>
-        <Route path="/signup" element={<Signup />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/" element={<Signup />} />
+        <Route path="/Login" element={<Login />} />
+        <Route path="/header" element={<Header/>} />
+        <Route path="/Health" element={<Location />} />
+
+        {/* <Route path='/signin' element={<Login/>} /> */}
       </Routes>
     </Router>
-    </div>
+    </>
+    // </div>
   );
 }
 export default App;

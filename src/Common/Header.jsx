@@ -3,9 +3,8 @@ import { useNavigate } from 'react-router-dom';
 
 export default function Header() {
     const navigate = useNavigate();
-    const goLogin=()=>{
-        navigate('/login')
-    }
+    const goLogin=()=>{navigate('/login');}
+    const goSign =()=>{navigate('/'); }
     return (
         <>
             <nav class="navbar navbar-expand-lg bg-primary">
@@ -31,13 +30,16 @@ export default function Header() {
                                     <li><a class="dropdown-item" href="#">Something else here</a></li>
                                 </ul>
                             </li>
-                            <li class="nav-item">
+                            {/* <li class="nav-item">
                                 <a class="nav-link disabled text-white" aria-disabled="true">Disabled</a>
-                            </li>
+                            </li> */}
                         </ul>
                         <form class="d-flex" role="search">
-                            <button class="btn btn-danger"  onClick={goLogin} type="submit">Login
+                            <button class="btn btn-danger h-btn"  onClick={goLogin} type="submit">Login
                             </button>
+                            {/* <button class="btn btn-danger"  onClick={goSign} type="submit">SignUp
+                            </button> */}
+                        
                         </form>
                     </div>
                 </div>
