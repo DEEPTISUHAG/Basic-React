@@ -7,7 +7,6 @@ import Location from './Health/Location';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; 
 function App() {
   return (
-    // <div className="App">
     <>
     <Router>
     <Header/> 
@@ -15,13 +14,11 @@ function App() {
         <Route path="/" element={<Signup />} />
         <Route path="/Login" element={<Login />} />
         <Route path="/header" element={<Header/>} />
-        <Route path="/Health" element={<Location />} />
-
-        {/* <Route path='/signin' element={<Login/>} /> */}
+        <Route path="/Health/Location" element={<Location />} />
       </Routes>
     </Router>
     </>
-    // </div>
+  
   );
 }
 export default App;
