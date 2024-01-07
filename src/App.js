@@ -4,6 +4,7 @@ import Login from './Login/Login';
 import Header from './Common/Header';
 import Signup from './Signup/Signup';
 import Location from './Health/Location';
+import Upload from './Upload/Upload';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; 
 function App() {
   return (
@@ -15,6 +16,8 @@ function App() {
         <Route path="/Login" element={<Login />} />
         <Route path="/header" element={<Header/>} />
         <Route path="/healthpolicy" element={<Location />} />
+        <Route path="/uploadphoto" element={<Upload />} />
+
       </Routes>
     </Router>
     </>
