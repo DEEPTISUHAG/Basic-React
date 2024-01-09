@@ -115,15 +115,15 @@ export default function Location() {
 
                     <div className='mt-3'>
                       <label>
-                        <p>
+                        
                         <input type="checkbox" name="" id="" />{' '}Whether Suffering pre-existing disease(PED)?
 
-                        </p>
+                        
                       </label>
                       <label>
-                        <p>
+                        
                         <input type="checkbox" name="" id="" />{' '}Do you want to extend the coverage for Personal Accident? 
-                        </p>
+                        
                       </label>
                     </div>
                     <div className='long-btn'>

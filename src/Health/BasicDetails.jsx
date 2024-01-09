@@ -6,10 +6,18 @@ import Healthcare from '../images/healthcare-medical.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import { Calendar } from 'primereact/calendar';
+import { Link } from "react-router-dom";
 
 export default function BasicDetails() {
     const [value, setValue] = useState();
     const [date, setDate] = useState(null);
+    const [checkSubmit, setcheckSubmit] = useState(false);
+
+
+  const formSubmit = (e) => {
+    e.preventDefault();
+    setcheckSubmit(true);
+  }
     return (
         <div className="container basic-details">
             <Stepper />
@@ -32,7 +40,7 @@ export default function BasicDetails() {
                             <h4>Proposer Self Details</h4>
                             <div className="col-6 input-group-section">
                                 <span className="p-float-label ">
-                                    <Calendar id="buttondisplay"value={date} onChange={(e) => setDate(e.value)} showIcon />
+                                    <Calendar id="buttondisplay" value={date} onChange={(e) => setDate(e.value)} showIcon />
                                     <label className="input-label" htmlFor="username">Date Of Birth</label>
                                 </span>
                             </div>
@@ -43,11 +51,28 @@ export default function BasicDetails() {
                                 </span>
                             </div>
                         </div>
-                        <div className="btn-section">
-                        <button type="submit" class="button common-primary-btn">Add More Member</button>
-                        <button type="submit" class="button common-btn">Confirm &amp; Continue</button>
+                        <div className='mt-3'>
+                            <div className="check-items">
+                            <input type="checkbox" name="" id="" />
+                            <label> 
+                                Whether Suffering pre-existing disease(PED)? 
+                            </label>
+                            </div>
+                            <div className="check-items">
+                            <input type="checkbox" name="" id="" />
+                            <label> 
+                                Do you want to extend the coverage for Personal Accident? 
+                            </label>
+
+                            </div>
+                           
+                           
                         </div>
-                        <p class="tnc"> By Clicking on the button above I agree to all <span class="terms-cond">T&amp;Cs</span></p>
+                        <div className="btn-section">
+                            <button type="submit" class="button common-primary-btn">Add More Member</button>
+                            <button action onClick={formSubmit} type="submit" class="button common-btn">Confirm &amp; Continue</button>
+                        </div>
+                        <p class="tnc"> By Clicking on the button above I agree to all <Link to={'/uploadphoto'}><span class="terms-cond">T&amp;Cs</span></Link></p>
                     </div>
                     <div className="col-6 img-section">
                         <img src={Healthcare} className='img-fluid'></img>

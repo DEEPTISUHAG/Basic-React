@@ -2,10 +2,6 @@
 
     width: 400px;
 }
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
-body{
-    font-family: 'Open Sans', sans-serif;
-}
 
 
 
@@ -30,7 +26,7 @@ h4{
 
 h2 {
     text-align: center;
-    font-weight: 800;
+    
     font-size: 25px;
 
 }
@@ -41,6 +37,7 @@ p {
 }
 input{
     height: 50px;
+   
 }
 
 html,
@@ -207,18 +204,120 @@ body {
 .first-box{
     display: flex;
     justify-content:space-between;
+    align-items: center;
+   
    
 }
 .drop-photo{
-    height: 150px;
-    width: 190px;
-    border-radius: 8px;
+     
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     outline-style: dashed;
-    outline-color: #c9c9cb;
+    outline-color: #c9c9cb; 
+    border-radius: 8px;
+    width: 187px;
+    /* padding: 80px 32px; */
+}
+.location{
+    display: flex;
+    justify-content: space-between;
 
 }
+
+
 .second-box{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
+.upload-image{
+    padding: 20px;
+}
+input[type='file']{
+    padding: 80px 32px;
+    display: flex;
+    content-visibility: hidden;
+     width: 160px;
+    /* outline-style: dashed; */
+    border: none;
+    outline-color: #c9c9cb; 
+    position: relative;
+}
+.check-items{
+    display: flex;
+    align-items: center;
+}
+.drop-icon{
+    position: absolute;
+    left: 218px;
+    bottom: 5px;
+    height: 53px;
+}
+.right-card{
+   
+    width: 80%;
+    height: 250px;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+}
+.right-card-1{
+   
+    width: 80%;
+    height: 100px;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+}
+.right-card-2{
+   
+    width: 80%;
+    height: 250px;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+}
+.right-cards{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: end;
+}
+.common-btn {
+    background-color: #f67912;
+    padding: 15px 16px;
+    width: 25%;
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    border-radius: 4px;
+   
+
+}
+.last-drop{
+    display: flex;
+    justify-content: end;
+}
+.p-button{
+    color: #c9c9cb;
+    background-color: #fff;
+    border-left: none;
+    border: 1px solid #c9c9cb;
+}
+.input-box{
+    width: 90%;
+}
+.p-inputtext{
+    padding: 15px 77px;
+}
+.p-multiselect .p-multiselect-label{
+    padding: 12px 14px;
+}
+    
