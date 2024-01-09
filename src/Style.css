@@ -5,6 +5,7 @@
 
 
 
+
 .close-icon {
     width: 40px;
     height: 40px;
@@ -20,7 +21,7 @@
 
 }
 h4{
-    font-weight: 800;
+    font-weight: 700;
     font-size: 25px;
 }
 
@@ -34,6 +35,7 @@ h2 {
 p {
     font-weight: 600;
     color: #c9c9cb;
+    font-size: 14px;
 }
 input{
     height: 50px;
@@ -261,6 +263,7 @@ input[type='file']{
     width: 80%;
     height: 250px;
     padding: 12px;
+    text-align: start;
     border-radius: 8px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 
@@ -281,6 +284,8 @@ input[type='file']{
     padding: 12px;
     border-radius: 8px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    background-image: linear-gradient(rgb(183, 189, 240), rgb(246, 246, 243));
+
 
 }
 .right-cards{
@@ -314,10 +319,40 @@ input[type='file']{
 .input-box{
     width: 90%;
 }
+ .p-calendar .p-inputtext{
+    padding: 15px 67px 15px 12px;
+}
 .p-inputtext{
-    padding: 15px 77px;
+    padding: 15px 147px 15px 18px;;
+
 }
 .p-multiselect .p-multiselect-label{
     padding: 12px 14px;
 }
+.p-datepicker-trigger{
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+
+}
+.right-head{
+    text-align: left;
+    font-weight: 700;
+    color: #000;
+}
+.divide{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    color: #7b7b7c;
+}
+.plan{
+    color: #f67912;
+    text-decoration: underline;
+}
+.details{
+    color: #000;
+    font-size: 16px;
+}
+
+
     

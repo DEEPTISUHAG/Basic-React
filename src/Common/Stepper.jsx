@@ -8,6 +8,8 @@ export default function Stepper() {
         <li class=""><span class="tab-index">2.</span>CHOOSE PLAN</li>
         <li class=""><span class="tab-index">3.</span>ADDITIONAL DETAILS</li>
         <li class=""><span class="tab-index">4.</span>PERSONAL DETAILS</li>
+        <li class=""><span class="tab-index">5.</span>PAYMENT</li>
+
       </ul>
     </div>
   )

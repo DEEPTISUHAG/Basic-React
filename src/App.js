@@ -7,6 +7,7 @@ import Location from './Health/Location';
 import Upload from './Upload/Upload';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; 
 import BasicDetails from './Health/BasicDetails';
+import Personal from './Health/Personal'
 function App() {
   return (
     <>
@@ -19,6 +20,9 @@ function App() {
         <Route path="/healthpolicy" element={<Location />} />
         <Route path="/uploadphoto" element={<Upload />} />
         <Route path="/BasicDetails" element={<BasicDetails />} />
+        <Route path="/personal" element={<Personal />} />
+
+
       </Routes>
     </Router>
     </>
