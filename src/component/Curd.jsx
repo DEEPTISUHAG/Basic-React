@@ -1,10 +1,12 @@
 import { Button } from 'bootstrap'
-import React from 'react'
+import React, { useState } from 'react'
 
 export default function Curd() {
+  const [submit, setsubmit] = useState('')
   return (
     <div>
-      <Button>SIGN IN</Button>
-       </div>
+      
+      <Button onClick ={setsubmit}>SIGN IN</Button>
+    </div>
   )
 }
