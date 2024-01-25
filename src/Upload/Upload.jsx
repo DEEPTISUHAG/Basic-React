@@ -10,7 +10,7 @@ import { InputText } from "primereact/inputtext";
 export default function Upload() {
 
     const [date, setDate] = useState('');
-    const [date1, setDate1] = useState();
+    const [date1, setDate1] = useState('');
 
     const [value, setValue] = useState('');
     const [number, setNumber] = useState();
@@ -25,11 +25,11 @@ export default function Upload() {
     const [checkSubmit, setcheckSubmit] = useState(false);
     const [selectedCities, setSelectedCities] = useState(null);
     const cities = [
-        { name: 'New York', code: 'NY' },
-        { name: 'Rome', code: 'RM' },
-        { name: 'London', code: 'LDN' },
-        { name: 'Istanbul', code: 'IST' },
-        { name: 'Paris', code: 'PRS' }
+        { name: 'Gurugram', code: 'NY' },
+        { name: 'Rohtak', code: 'RM' },
+        { name: 'Jhajjar', code: 'LDN' },
+        { name: 'Bhiwani', code: 'IST' },
+        { name: 'Hisar', code: 'PRS' }
     ];
 
 
@@ -40,8 +40,24 @@ export default function Upload() {
         console.log("value", value);
         console.log("number", number);
         console.log("name", name);
+        console.log("Date1", date1);
         console.log("selectedCities", selectedCities);
+        const UploadData = {
+            "PolicyData": date,
+            "Relation": value,
+            'FullName': name,
+        }
+        sessionStorage.setItem('UserData', JSON.stringify(UploadData));
+
+        setNumber("")
+        setFile("")
+        setValue("")
+        setName("")
+        setDate("")
+        setDate1("")
+        setSelectedCities("")
     }
+
 
 
     const deep = (e) => {
@@ -52,6 +68,12 @@ export default function Upload() {
 
         });
     }
+
+    // Get data from session storage on component mount
+    const storedData = sessionStorage.getItem('myKey');
+
+
+
     return (
         <div>
 
@@ -135,7 +157,7 @@ export default function Upload() {
                                                 value={date}
                                                 onChange={(e) => setDate(e?.target?.value)} showIcon
                                                 placeholder='Policy Start Date'
-                                            /> 
+                                            />
                                         </div>
 
                                         <div className="col-6">
@@ -148,7 +170,7 @@ export default function Upload() {
                                                     display="chip"
                                                     placeholder="Select Cities"
                                                     maxSelectedLabels={3}
-                                                    className="w-full md:w-20rem"
+                                                    className=""
                                                 />
                                             </div>
                                         </div>

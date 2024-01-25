@@ -1,6 +1,6 @@
 .card {
 
-    width: 400px;
+    /* width: 400px; */
 }
 
 
@@ -303,6 +303,7 @@ input[type='file']{
     font-weight: 700;
     border: none;
     border-radius: 4px;
+    margin-bottom: 15px;
    
 
 }
@@ -328,6 +329,9 @@ input[type='file']{
 }
 .p-multiselect .p-multiselect-label{
     padding: 12px 14px;
+    :hover{
+        outline: none;
+    }
 }
 .p-datepicker-trigger{
     border-top-right-radius: 6px;
@@ -353,6 +357,44 @@ input[type='file']{
     color: #000;
     font-size: 16px;
 }
+:focus-visible {
+    outline: -webkit-focus-ring-color auto 0px;
+}
 
+
+.p-checkbox:not(.p-checkbox-disabled) .p-checkbox-box.p-highlight:hover {
+    border-color: #f7f5f3;
+    background: #e9a348;
+    color: #ffffff;
+}
+.p-checkbox .p-checkbox-box.p-highlight {
+    border-color: #b0b2b3;  
+    background: #e9a348;
+}
+.p-focus{
+    box-shadow: none;
+    border-color:#b0b2b3;
+}
+.p-checkbox:not(.p-checkbox-disabled) .p-checkbox-box:hover {
+     border-color: #b0b2b3;
+}
+.p-inputwrapper-focus:hover{
+    border-color: #b0b2b3;
+
+}
+.card-1{
+    width: 400px;
+
+}
+.com-btn{
+    background-color: #f67912;
+    padding: 15px 16px;
+   
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
 
     

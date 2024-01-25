@@ -30,6 +30,17 @@ export default function Login() {
         :
         ""
         } */}
+
+
+
+
+
+
+
+
+
+
+        
             <div className="Login-body">
                 <div class="card">
                     <div class="card-body">
@@ -37,14 +48,17 @@ export default function Login() {
                             <div className='head'> 
                              <h2>Sign In</h2>
                             </div>
+                            <div class="mb-3">
+                                <input name={name} value={name} onChange={(e)=>setEmail(e?.target?.value)} type="name" class="form-control" placeholder='some@gmail.com' id="exampleInputEmail1" aria-describedby="emailHelp" />
+                            </div>
                            
 
                             <div class="mb-3">
                                 <input name={email} value={email} onChange={(e)=>setEmail(e?.target?.value)} type="email" class="form-control" placeholder='some@gmail.com' id="exampleInputEmail1" aria-describedby="emailHelp" />
                             </div>
-                            <div class="mb-3">
+                            {/* <div class="mb-3">
                                 <input type="number" name={number} value={number} onChange={(e)=>setNumber(e?.target?.value)} class="form-control" placeholder='password' id="exampleInputEmail1" aria-describedby="emailHelp" />
-                            </div>
+                            </div> */}
 
                           
                             <div className="button-group">
