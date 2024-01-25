@@ -5,8 +5,8 @@ export default function Curd() {
   const [submit, setsubmit] = useState('')
   return (
     <div>
+      this is new page
       
-      <Button onClick ={setsubmit}>SIGN IN</Button>
     </div>
   )
 }
